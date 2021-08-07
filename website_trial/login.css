@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12151f;
+}
+
+.container {
+    width: 400px;
+    min-height: 400px;
+    background: #12151f;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    padding: 40px 30px;
+}
+
+.container .login-text {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #05f4b7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+    border-color: #371bb1;
+}
+
+input::placeholder{
+    color: #FFF;
+    opacity: 1;
+}
+
+input{
+    color: #05f4b7;
+}
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #371bb1;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #371bb1;
+    color: #05f4b7;
+}
+
+.login-register-text{
+    color: #05f4b7;
+    font-weight: 600;
+}
+
+.login-register-text a{
+    text-decoration: none;
+    color: #371bb1;
+
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+}
